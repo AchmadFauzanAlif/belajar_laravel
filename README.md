@@ -7,9 +7,17 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Belajar Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+### *Materi 7: Model*
+
+    Bab 1: Membuat Data pada file posts menjadi 1 data sumber dengan menggunakan class yang ditulis pada file web.php atau di bagian routenya. Masalah yang terjadi pada penggunaan metode ini adalah, tidak mungkin menuliskan suatu data pada file routenya, karena hakikatnya pada file route itu digunakan untuk penjaluran dari request bukan malah diisi data. 
+
+    Bab 2: Penggunakan data models seharusnya ditulis pada folder models yang memang digunakan untuk memproses atau mengambil suatu data. Setelah pembuatan class pada models, tidak bisa langsung digunakan akan tetapi harus dibuatkan [namespace](https://en.wikipedia.org/wiki/Namespace) terlebih dahulu agar bisa diguanakan pada Route. 
+
+    Bab 3: Selanjutnya adalah metode pencarian pada post mana yang memang ingin dibaca. Metode ini harusnya dibebankan pada models bukan pada route. Dengan ini harusnya metode ini akan dipindahkan ke dalam class post juga, setelah itu dikembalikan datanya ke route. Disini juga menggunakan arrow function yang dimiliki oleh php dimana function ini tidak menggunakan scope
+
+    Bab 4: Selanjutnya adalah penggunaan fungsi [abort()](https://laravel.com/docs/11.x/helpers#method-abort) yang bisa digunakan untuk membuat halaman Http exeption. Contohnya disini adalah 404, dimana jika memanggil file selain posts.
 
 - [Simple, fast routing engine](https://laravel.com/docs/routing).
 - [Powerful dependency injection container](https://laravel.com/docs/container).

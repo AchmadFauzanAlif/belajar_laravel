@@ -9,12 +9,13 @@
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <x-link-nav href="/" :active="request()->is('/')">Home</x-link-nav>
-              <x-link-nav href="/blog" :active="request()->is('blog')">Blog</x-link-nav>
+              <x-link-nav href="/posts" :active="request()->is('posts')">Blog</x-link-nav>
               <x-link-nav href="/about" :active="request()->is('about')">About</x-link-nav>
               <x-link-nav href="/contact" :active="request()->is('contact')">Contact</x-link-nav>
             </div>
           </div>
         </div>
+
         <div class="hidden md:block">
           <div class="ml-4 flex items-center md:ml-6">
             
@@ -57,6 +58,7 @@
             </div>
           </div>
         </div>
+
         <div class="-mr-2 flex md:hidden">
           <!-- Mobile menu button -->
           <button type="button" @click="isOpen = !isOpen" class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden" aria-controls="mobile-menu" aria-expanded="false">
@@ -80,7 +82,7 @@
       <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <x-link-nav-mobile href="/" :activeMobile="request()->is('/')">Home</x-link-nav-mobile>
-        <x-link-nav-mobile href="/blog" :activeMobile="request()->is('blog')">Blog</x-link-nav-mobile>
+        <x-link-nav-mobile href="/posts" :activeMobile="request()->is('posts')">Blog</x-link-nav-mobile>
         <x-link-nav-mobile href="/about" :activeMobile="request()->is('about')">About</x-link-nav-mobile>
         <x-link-nav-mobile href="/contact" :activeMobile="request()->is('contact')">Contact</x-link-nav-mobile>
         

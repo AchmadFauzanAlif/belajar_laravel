@@ -11,23 +11,21 @@
 
 ### *Materi 7: Model*
 
-    Bab 1: Membuat Data pada file posts menjadi 1 data sumber dengan menggunakan class yang ditulis pada file web.php atau di bagian routenya. Masalah yang terjadi pada penggunaan metode ini adalah, tidak mungkin menuliskan suatu data pada file routenya, karena hakikatnya pada file route itu digunakan untuk penjaluran dari request bukan malah diisi data. 
+- Bab 1: Membuat Data pada file posts menjadi 1 data sumber dengan menggunakan class yang ditulis pada file web.php atau di bagian routenya. Masalah yang terjadi pada penggunaan metode ini adalah, tidak mungkin menuliskan suatu data pada file routenya, karena hakikatnya pada file route itu digunakan untuk penjaluran dari request bukan malah diisi data. 
 
-    Bab 2: Penggunakan data models seharusnya ditulis pada folder models yang memang digunakan untuk memproses atau mengambil suatu data. Setelah pembuatan class pada models, tidak bisa langsung digunakan akan tetapi harus dibuatkan [namespace](https://en.wikipedia.org/wiki/Namespace) terlebih dahulu agar bisa diguanakan pada Route. 
+- Bab 2: Penggunakan data models seharusnya ditulis pada folder models yang memang digunakan untuk memproses atau mengambil suatu data. Setelah pembuatan class pada models, tidak bisa langsung digunakan akan tetapi harus dibuatkan [namespace](https://en.wikipedia.org/wiki/Namespace) terlebih dahulu agar bisa diguanakan pada Route. 
 
-    Bab 3: Selanjutnya adalah metode pencarian pada post mana yang memang ingin dibaca. Metode ini harusnya dibebankan pada models bukan pada route. Dengan ini harusnya metode ini akan dipindahkan ke dalam class post juga, setelah itu dikembalikan datanya ke route. Disini juga menggunakan arrow function yang dimiliki oleh php dimana function ini tidak menggunakan scope
+Bab 3: Selanjutnya adalah metode pencarian pada post mana yang memang ingin dibaca. Metode ini harusnya dibebankan pada models bukan pada route. Dengan ini harusnya metode ini akan dipindahkan ke dalam class post juga, setelah itu dikembalikan datanya ke route. Disini juga menggunakan arrow function yang dimiliki oleh php dimana function ini tidak menggunakan scope
 
-    Bab 4: Selanjutnya adalah penggunaan fungsi [abort()](https://laravel.com/docs/11.x/helpers#method-abort) yang bisa digunakan untuk membuat halaman Http exeption. Contohnya disini adalah 404, dimana jika memanggil file selain posts.
+Bab 4: Selanjutnya adalah penggunaan fungsi [abort()](https://laravel.com/docs/11.x/helpers#method-abort) yang bisa digunakan untuk membuat halaman Http exeption. Contohnya disini adalah 404, dimana jika memanggil file selain posts.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### *Materi 8: Migration and Database*
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Bab 1: Saat kita ingin menggunakan database dengan struktur yang sama sebelumnya harus memberikannya secara manual, akan tetapi saat menggunakan laravel kita bisa menggunakan file migrasi yang sudah dibuat. Jadi struktur dari databasenya jika kita bekerja dalam tim akan sama dan lebih mudah. 
+
+Bab 2: Cara pembuatan filenya menggunakan perintah [migrate](https://laravel.com/docs/11.x/migrations#introduction) yang sudah tersedia di laravel bukan membuatnya secara manual. BACA DOKUMENTASI atau tonton ulang video jika ada yang belum dipahami.
+
+
 
 ## Learning Laravel
 
